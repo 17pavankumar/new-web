@@ -7,17 +7,26 @@
 body {
     header {
         background-color: rgb(0, 141, 108);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 3px;
 
         h1 {
             color: aliceblue;
-            display: inline;
+
         }
 
         nav {
-            display: inline;
 
             a {
                 color: black;
+                text-decoration: none;
+                text-shadow: 1px 1px 1px rgb(43, 197, 161);
+            }
+            a:hover{
+                color: rgb(169, 26, 26);
+                transition-duration: 500ms;
             }
         }
     }
@@ -26,34 +35,49 @@ body {
 main {
     section {
         width: 80%;
-        background-color: grey;
+        /* background-color: grey; */
         margin: auto;
         margin-top: 10px;
         display: flex;
     }
 
     section#intro {
+        display: flex;
+        box-shadow: 1px 1px 3px 1px grey;
         figure {
+            height: 200%;
             width: 50%;
 
             img {
                 width: 100%;
                 height: 80%;
                 object-fit: cover;
-                object-position: 0px 0%;
+                object-position: 0px 0px;
                 ;
             }
 
         }
 
         figcaption {
-            color: aliceblue;
+            padding-left: 4px;
+            color: black;
         }
 
-        div {
-            display: inline;
-            width: 40%;
+        div#intro-quote {
+            width: 50%;
             padding: 5px;
+            /* border: 1px solid; */
+            justify-content: center;
+            flex-direction: column;
         }
+
     }
+}
+.shadow{
+    box-shadow: 1px 1px 3px 1px grey;
+}
+
+.rounded-edge{
+    border-radius: 5px;
+    overflow: hidden;
 }
